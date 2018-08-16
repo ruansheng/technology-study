@@ -5,4 +5,4 @@ mysql study
 
 [1.&nbsp; inner join、left join、right join](./join.md)
 
-[s.&nbsp; show processlist](./show_processlist.md)
+[2.&nbsp; show processlist](./show_processlist.md)
