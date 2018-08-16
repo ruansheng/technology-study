@@ -12,3 +12,5 @@ mysql study
 [4.&nbsp; transaction](./transaction.md)
 
 [5.&nbsp; myisam && innodb](./myisam_innodb.md)
+
+[6.&nbsp; tinyint 、 smallint 、mediumint 、int 、 bigint](./int.md)
