@@ -1,4 +1,4 @@
-## mysql 5种连接
+## sql 5种连接
 ```
 分别创建table a and  table b
 create table `a` (
