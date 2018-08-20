@@ -220,3 +220,35 @@ mysql> explain select * from hash_test where age = 2;
 mysql> ALTER TABLE hash_test DROP PARTITION p0;
 ERROR 1512 (HY000): DROP PARTITION can only be used on RANGE/LIST partitions
 ```
+
+### Linear Hash 分区
+线性哈希功能，它与常规哈希的区别在于，线性哈希功能使用的一个线性的2的幂（powers-of-two）运算法则，而常规哈希使用的是求哈希函数值的模数。线性哈希分区和常规哈希分区在语法上的唯一区别在于，在“PARTITION BY”子句中添加“LINEAR”关键字
+```
+create table linear_hash_test(
+	id int not null,
+	age int not null
+)
+partition by linear hash(year(age))
+partitions 4;
+
+insert into linear_hash_test value(1, 1);
+insert into linear_hash_test value(2, 2);
+insert into linear_hash_test value(3, 3);
+insert into linear_hash_test value(4, 4);
+```
+
+### Key分区
+类似于按HASH分区，区别在于KEY分区只支持计算一列或多列，且MySQL服务器提供其自身的哈希函数。必须有一列或多列包含整数值
+```
+create table linear_key_test(
+	id int not null,
+	age int not null
+)
+partition by linear key(year(age))
+partitions 4;
+
+insert into linear_key_test value(1, 1);
+insert into linear_key_test value(2, 2);
+insert into linear_key_test value(3, 3);
+insert into linear_key_test value(4, 4);
+```
