@@ -16,3 +16,5 @@ mysql study
 [6.&nbsp; tinyint 、 smallint 、mediumint 、int 、 bigint](./int.md)
 
 [7.&nbsp; char varchar](./char_varchar.md)
+
+[8.&nbsp; partition](./partition.md)
