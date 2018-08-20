@@ -172,3 +172,51 @@ mysql> select * from list_test;
 | 12 |  12 |
 +----+-----+
 ```
+
+### Hash分区
+基于用户定义的表达式的返回值来进行选择的分区，该表达式使用将要插入到表中的这些行的列值进行计算。这个函数可以包含MySQL 中有效的、产生非负整数值的任何表达式
+```
+需要在后面再添加一个“PARTITIONS num”子句，其中num是一个非负的整数，它表示表将要被分割成分区的数量，如果没有包括一个PARTITIONS子句，那么分区的数量将默认为1
+
+create table hash_test(
+	id int not null,
+	age int not null
+)
+partition by hash(age)
+partitions 4;
+
+// 测试
+insert into hash_test value(1, 1);
+insert into hash_test value(2, 2);
+insert into hash_test value(3, 3);
+insert into hash_test value(4, 4);
+
+mysql> select * from hash_test;
++----+-----+
+| id | age |
++----+-----+
+|  4 |   4 |
+|  1 |   1 |
+|  2 |   2 |
+|  3 |   3 |
++----+-----+
+
+mysql> explain select * from hash_test where age > 2;
++----+-------------+-----------+-------------+------+---------------+------+---------+------+------+----------+-------------+
+| id | select_type | table     | partitions  | type | possible_keys | key  | key_len | ref  | rows | filtered | Extra       |
++----+-------------+-----------+-------------+------+---------------+------+---------+------+------+----------+-------------+
+|  1 | SIMPLE      | hash_test | p0,p1,p2,p3 | ALL  | NULL          | NULL | NULL    | NULL |    4 |    33.33 | Using where |
++----+-------------+-----------+-------------+------+---------------+------+---------+------+------+----------+-------------+
+
+mysql> explain select * from hash_test where age = 2;
++----+-------------+-----------+------------+------+---------------+------+---------+------+------+----------+-------------+
+| id | select_type | table     | partitions | type | possible_keys | key  | key_len | ref  | rows | filtered | Extra       |
++----+-------------+-----------+------------+------+---------------+------+---------+------+------+----------+-------------+
+|  1 | SIMPLE      | hash_test | p2         | ALL  | NULL          | NULL | NULL    | NULL |    1 |   100.00 | Using where |
++----+-------------+-----------+------------+------+---------------+------+---------+------+------+----------+-------------+
+由上可见，范围查询会扫描所有分区，精确的值查询能定位到某个人特定分区
+
+// 特别注意: 删除分区仅能用在RANGE/LIST分区
+mysql> ALTER TABLE hash_test DROP PARTITION p0;
+ERROR 1512 (HY000): DROP PARTITION can only be used on RANGE/LIST partitions
+```
