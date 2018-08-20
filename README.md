@@ -14,3 +14,5 @@ mysql study
 [5.&nbsp; myisam && innodb](./myisam_innodb.md)
 
 [6.&nbsp; tinyint 、 smallint 、mediumint 、int 、 bigint](./int.md)
+
+[7.&nbsp; char varchar](./char_varchar.md)
