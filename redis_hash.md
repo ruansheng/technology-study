@@ -10,6 +10,13 @@ OK
 127.0.0.1:6379> object encoding name
 "embstr"
 
+看一下测试例子:
+127.0.0.1:6379> hset htest name rs
+(integer) 1
+```
+
+### hash结构的内部编码方法
+```
 对于Hash类型，其内部编码方式可能有两种：
 OBJ_ENCODING_ZIPLIST（压缩列表）
 OBJ_ENCODING_HT（哈希表）
@@ -24,13 +31,21 @@ Redis 默认给出了默认值，也可根据实际情况自行修改配置
 当 Hash类型键的字段个数 < hash-max-ziplist-entries 并且 每个字段名和字段值的长度 < hash-max-ziplist-value 时，
 Redis 会使用 OBJ_ENCODING_ZIPLIST来存储该键，反之则会转换为 OBJ_ENCODING_HT的编码方式。
 
-看一下测试例子:
-127.0.0.1:6379> hset htest name rs
-(integer) 1
 127.0.0.1:6379> object encoding htest
 "ziplist"
-127.0.0.1:6379> hset htest name 1234567890123456789012345678901234567890123456789012345678901234
+127.0.0.1:6379> hset htest name 1234567890123456789012345678901234567890123456789012345678901234   // 设置64个字符
 (integer) 0
 127.0.0.1:6379> object encoding htest
 "ziplist"
+127.0.0.1:6379> hset htest name 12345678901234567890123456789012345678901234567890123456789012345  // 设置65个字符
+(integer) 0
+127.0.0.1:6379> object encoding htest
+"hashtable"
+由上可见，超过64个字符之后编码格式会由 ZIPLIST方式切换为 Hashtable方式
+
+```
+
+### OBJ_ENCODING_ZIPLIST 和 OBJ_ENCODING_HT 这两种编码格式的内部存储模型
+```
+
 ```
