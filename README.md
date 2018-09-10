@@ -1,7 +1,4 @@
-# mysql-study
-mysql study
-
-#### study
+#### mysql-study
 
 [1.&nbsp; inner join、left join、right join](./join.md)
 
@@ -18,3 +15,7 @@ mysql study
 [7.&nbsp; char varchar](./char_varchar.md)
 
 [8.&nbsp; partition](./partition.md)
+
+#### redis-study
+
+[1.&nbsp; redis hash](./redis_hash.md)
