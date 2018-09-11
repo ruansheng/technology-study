@@ -47,7 +47,41 @@ Redis 会使用 OBJ_ENCODING_ZIPLIST来存储该键，反之则会转换为 OBJ_
 
 ### OBJ_ENCODING_ZIPLIST 编码格式的内部存储模型
 ```
-Ziplist 压缩列表是一种紧凑编码格式，总体思想是时间换空间，即以部分读写性能为代价，来换取极高的内存空间利用率，因此只会用于 字段个数少，且字段值也较小的场景，压缩列表内存利用率极高的原因与其连续内存的特性是分不开的
+Ziplist 压缩列表是一种紧凑编码格式，总体思想是时间换空间，即以部分读写性能为代价，来换取极高的内存空间利用率，因此只会用于 字段个数少，且字段值也较小的场景，压缩列表内存利用率极高的原因与其连续内存的特性是分不开的，ziplist并没有定义明确的结构体, 根据存储结构我们可以定义ziplist如下, 只是进行演示用.其中content字段存储实际的实体内容, 实体
+typedef struct ziplist{
+     /*ziplist分配的内存大小*/
+     uint32_t bytes;
+     /*达到尾部的偏移量*/
+     uint32_t tail_offset;
+     /*存储元素实体个数*/
+     uint16_t length;
+     /*存储内容实体元素*/
+     unsigned char* content[];
+     /*尾部标识*/
+     unsigned char end;
+}ziplist;
+
+/*元素实体所有信息, 仅仅是描述使用, 内存中并非如此存储*/
+typedef struct zlentry {
+     /*前一个元素长度需要空间和前一个元素长度*/
+    unsigned int prevrawlensize, prevrawlen;
+     /*元素长度需要空间和元素长度*/
+    unsigned int lensize, len;
+     /*头部长度即prevrawlensize + lensize*/
+    unsigned int headersize;
+     /*元素内容编码*/
+    unsigned char encoding;
+     /*元素实际内容*/
+    unsigned char *p;
+}zlentry;
+
+                                  ziplist内存布局
+|-----------|-----------|----------|---------------------------------------------------|---|
+    bytes      offset      length  content         {zlentry, zlentry ... ...}           end
+    
 ```
 
 ### OBJ_ENCODING_HT 编码格式的内部存储模型
+```
+OBJ_ENCODING_HT 这种编码方式内部才是真正的哈希表结构，或称为字典结构，其可以实现O(1)复杂度的读写操作，因此效率很高。
+```
