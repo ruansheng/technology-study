@@ -45,7 +45,9 @@ Redis 会使用 OBJ_ENCODING_ZIPLIST来存储该键，反之则会转换为 OBJ_
 
 ```
 
-### OBJ_ENCODING_ZIPLIST 和 OBJ_ENCODING_HT 这两种编码格式的内部存储模型
+### OBJ_ENCODING_ZIPLIST 编码格式的内部存储模型
+```
+Ziplist 压缩列表是一种紧凑编码格式，总体思想是时间换空间，即以部分读写性能为代价，来换取极高的内存空间利用率，因此只会用于 字段个数少，且字段值也较小的场景，压缩列表内存利用率极高的原因与其连续内存的特性是分不开的
 ```
 
-```
+### OBJ_ENCODING_HT 编码格式的内部存储模型
