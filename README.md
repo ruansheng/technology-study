@@ -20,7 +20,7 @@
 
 [1.&nbsp; redis hash](./redis_hash.md)
 
-#### nginx-study
+#### linux-study
 
-[1.&nbsp; access log rsyslog](./nginx_access_log.md)
+[1.&nbsp; rsyslog](./rsyslog.md)
 
