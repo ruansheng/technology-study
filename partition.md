@@ -173,7 +173,7 @@ mysql> select * from list_test;
 +----+-----+
 ```
 
-### Hash分区
+### 常规Hash分区
 基于用户定义的表达式的返回值来进行选择的分区，该表达式使用将要插入到表中的这些行的列值进行计算。这个函数可以包含MySQL 中有效的、产生非负整数值的任何表达式
 ```
 需要在后面再添加一个“PARTITIONS num”子句，其中num是一个非负的整数，它表示表将要被分割成分区的数量，如果没有包括一个PARTITIONS子句，那么分区的数量将默认为1
@@ -219,6 +219,8 @@ mysql> explain select * from hash_test where age = 2;
 // 特别注意: 删除分区仅能用在RANGE/LIST分区
 mysql> ALTER TABLE hash_test DROP PARTITION p0;
 ERROR 1512 (HY000): DROP PARTITION can only be used on RANGE/LIST partitions
+
+特点：常规hash的分区非常的简便，通过取模的方式可以让数据非常平均的分布每一个分区，但是由于分区在创建表的时候已经固定了。如果新增或者收缩分区的数据迁移比较大。
 ```
 
 ### Linear Hash 分区
@@ -251,4 +253,12 @@ insert into linear_key_test value(1, 1);
 insert into linear_key_test value(2, 2);
 insert into linear_key_test value(3, 3);
 insert into linear_key_test value(4, 4);
+```
+
+### 分区管理
+```
+常规HASH和线性HASH的增加收缩分区的原理是一样的。增加和收缩分区后原来的数据会根据现有的分区数量重新分布。HASH分区不能删除分区，所以不能使用DROP PARTITION操作进行分区删除操作；
+只能通过ALTER TABLE ... COALESCE PARTITION num来合并分区，这里的num是减去的分区数量；
+可以通过ALTER TABLE ... ADD PARTITION PARTITIONS num来增加分区，这里是null是在原先基础上再增加的分区数量。
+调整分区数后，数据根据现有的分区进行了重新的分布
 ```
