@@ -26,7 +26,7 @@
 
 #### http-study
 
-[1.&nbsp; If-modified-since last-modified](./modified.md)
+[1.&nbsp; If-Modified-Since Last-Modified](./modified.md)
 
 [2.&nbsp; Accept-Encoding Content-Encoding](./accept_encoding_content_encoding.md)
 
