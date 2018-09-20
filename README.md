@@ -30,3 +30,5 @@
 
 [2.&nbsp; gzip deflate](./gzip_deflate.md)
 
+[3.&nbsp; Range Content-Range](./range_content_range.md)
+
