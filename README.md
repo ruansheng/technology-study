@@ -28,3 +28,5 @@
 
 [1.&nbsp; If-modified-since last-modified](./modified.md)
 
+[2.&nbsp; gzip deflate](./gzip_deflate.md)
+
