@@ -28,7 +28,7 @@
 
 [1.&nbsp; If-modified-since last-modified](./modified.md)
 
-[2.&nbsp; gzip deflate](./gzip_deflate.md)
+[2.&nbsp; Accept-Encoding Content-Encoding](./accept_encoding_content_encoding.md)
 
 [3.&nbsp; Range Content-Range](./range_content_range.md)
 
