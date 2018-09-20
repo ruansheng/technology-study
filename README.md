@@ -24,3 +24,7 @@
 
 [1.&nbsp; rsyslog](./rsyslog.md)
 
+#### http-study
+
+[1.&nbsp; If-modified-since last-modified](./modified.md)
+
