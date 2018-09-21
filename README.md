@@ -32,3 +32,5 @@
 
 [3.&nbsp; Range Content-Range](./range_content_range.md)
 
+[4.&nbsp; status code](./status_code.md)
+
