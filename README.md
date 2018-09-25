@@ -29,6 +29,8 @@
 
 [1.&nbsp; rsyslog](./rsyslog.md)
 
+[2.&nbsp; fifo](./fifo.md)
+
 #### http-study
 
 [1.&nbsp; If-Modified-Since Last-Modified](./modified.md)
