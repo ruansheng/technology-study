@@ -25,6 +25,9 @@
 
 [1.&nbsp; redis hash](./redis_hash.md)
 
+#### mongodb-study
+
+
 #### linux-study
 
 [1.&nbsp; rsyslog](./rsyslog.md)
@@ -40,4 +43,6 @@
 [3.&nbsp; Range Content-Range](./range_content_range.md)
 
 [4.&nbsp; status code](./status_code.md)
+
+[5.&nbsp; Basic Authorization](./basic_authorization.md)
 
