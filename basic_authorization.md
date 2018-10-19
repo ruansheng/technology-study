@@ -3,7 +3,7 @@ Basic认证是从HTTP/1.0定义的认证方式，是web服务器与通信客户�
 
 ### Basic认证的步骤
 ```
-1. 当请求的资源需要Basic认证时，服务器会返回状态码401 Authorization Required，返回带有WWW-Authorization首部字段的响应
+1. 当请求的资源需要Basic认证时，服务器会返回状态行401 Authorization Required，返回带有WWW-Authorization首部字段的响应
 2. 客户端收到状态码401，认为是Basic认证，需要将用户id和密码发送给服务器，发送的内容是以"用户id:密码"构成，再经过base64编码，
 把编码结果写入首部字段Authorization后发送请求，当使用的是浏览器时，编码右浏览器完成
 3. 服务端接收到包含Authorization首部字段的请求时，会对认证信息进行正确性验证，如果验证通过后，则会返回一条包含Request-URI资源
