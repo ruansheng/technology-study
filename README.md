@@ -50,5 +50,8 @@
 
 [1.&nbsp; --with-http_stub_status_module](./http_stub_status_module.md)
 
-[1.&nbsp; worker_processes](./worker_processes.md)
+[2.&nbsp; worker_processes、worker_cpu_affinity](./worker_processes.md)
+
+[3.&nbsp; worker_connections](./worker_connections.md)
+
 
