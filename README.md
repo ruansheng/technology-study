@@ -56,6 +56,8 @@
 
 [4.&nbsp; worker_rlimit_nofile](./worker_rlimit_nofile.md)
 
+[5.&nbsp; sendfile](./sendfile.md)
+
 #### other-study
 
 [1.&nbsp; filebeats](./other/filebeats.md)
