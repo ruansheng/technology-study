@@ -56,3 +56,9 @@
 
 [4.&nbsp; worker_rlimit_nofile](./worker_rlimit_nofile.md)
 
+#### other-study
+
+[1.&nbsp; filebeats](./other/filebeats.md)
+
+[2.&nbsp; logstash](./other/logstash.md)
+
