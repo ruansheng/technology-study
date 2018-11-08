@@ -22,6 +22,13 @@ cat /proc/cpuinfo | grep "cpu cores" | wc -l
 
 ## worker_processes
 worker_processes用来指定操作系统启动多少个Nginx工作进程运行，据官方说法，一般开一个就够了，多开几个，可以减少机器io带来的影响
+```
+// 手动配置nginx worker个数，默认不配置是1
+worker_processes 4;
+
+// 可以配置为默认，这样启动的时候就会自动获取CPU内核数，启动相应的nginx worker数，这个auto是在nginx 1.2.x版本之后才支持的
+worker_processes auto;
+```
 
 ## worker_cpu_affinity
 用来绑定nginx进程到特定CPU，默认情况下，nginx的进程跑在某一个CPU或CPU的某一个核上，导致nginx进程使用硬件的资源不均，worker_cpu_affinity绑定可以充分有效的利用有效的硬件资源
