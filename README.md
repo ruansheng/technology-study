@@ -50,3 +50,5 @@
 
 [1.&nbsp; --with-http_stub_status_module](./http_stub_status_module.md)
 
+[1.&nbsp; worker_processes](./worker_processes.md)
+
