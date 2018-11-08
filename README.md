@@ -46,3 +46,7 @@
 
 [5.&nbsp; Basic Authorization](./basic_authorization.md)
 
+#### nginx-study
+
+[1.&nbsp; --with-http_stub_status_module](./http_stub_status_module.md)
+
