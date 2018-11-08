@@ -10,6 +10,9 @@ grep processor /proc/cpuinfo|wc -l
 查看物理CPU总颗数
 grep 'physical id' /proc/cpuinfo|sort|uniq|wc -l
 
+每个物理CPU中Core的个数：
+cat /proc/cpuinfo | grep "cpu cores" | wc -l
+
 通过执行top命令，然后按数字1，即可显示所有的CPU核数
 %Cpu0  :  0.3 us,  0.3 sy,  0.0 ni, 99.3 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
 %Cpu1  :  0.3 us,  0.3 sy,  0.0 ni, 99.3 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
