@@ -36,15 +36,15 @@
 
 #### http-study
 
-[1.&nbsp; If-Modified-Since Last-Modified](./modified.md)
+[1.&nbsp; If-Modified-Since Last-Modified](./http/modified.md)
 
-[2.&nbsp; Accept-Encoding Content-Encoding](./accept_encoding_content_encoding.md)
+[2.&nbsp; Accept-Encoding Content-Encoding](./http/accept_encoding_content_encoding.md)
 
-[3.&nbsp; Range Content-Range](./range_content_range.md)
+[3.&nbsp; Range Content-Range](./http/range_content_range.md)
 
-[4.&nbsp; status code](./status_code.md)
+[4.&nbsp; status code](./http/status_code.md)
 
-[5.&nbsp; Basic Authorization](./basic_authorization.md)
+[5.&nbsp; Basic Authorization](./http/basic_authorization.md)
 
 #### nginx-study
 
