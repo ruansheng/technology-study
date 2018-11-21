@@ -1,38 +1,38 @@
 #### php-study
 
-[1.&nbsp; strlen mb_strlen](./strlen_mb_strlen.md)
+[1.&nbsp; strlen mb_strlen](./php/strlen_mb_strlen.md)
 
 
 #### mysql-study
 
-[1.&nbsp; inner join、left join、right join](./join.md)
+[1.&nbsp; inner join、left join、right join](./mysql/join.md)
 
-[2.&nbsp; show processlist](./show_processlist.md)
+[2.&nbsp; show processlist](./mysql/show_processlist.md)
 
-[3.&nbsp; explain](./explain.md)
+[3.&nbsp; explain](./mysql/explain.md)
 
-[4.&nbsp; transaction](./transaction.md)
+[4.&nbsp; transaction](./mysql/transaction.md)
 
-[5.&nbsp; myisam && innodb](./myisam_innodb.md)
+[5.&nbsp; myisam && innodb](./mysql/myisam_innodb.md)
 
-[6.&nbsp; tinyint 、 smallint 、mediumint 、int 、 bigint](./int.md)
+[6.&nbsp; tinyint 、 smallint 、mediumint 、int 、 bigint](./mysql/int.md)
 
-[7.&nbsp; char varchar](./char_varchar.md)
+[7.&nbsp; char varchar](./mysql/char_varchar.md)
 
-[8.&nbsp; partition](./partition.md)
+[8.&nbsp; partition](./mysql/partition.md)
 
 #### redis-study
 
-[1.&nbsp; redis hash](./redis_hash.md)
+[1.&nbsp; redis hash](./redis/redis_hash.md)
 
 #### mongodb-study
 
 
 #### linux-study
 
-[1.&nbsp; rsyslog](./rsyslog.md)
+[1.&nbsp; rsyslog](./linux/rsyslog.md)
 
-[2.&nbsp; fifo](./fifo.md)
+[2.&nbsp; fifo](./linux/fifo.md)
 
 #### http-study
 
