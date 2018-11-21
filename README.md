@@ -48,17 +48,17 @@
 
 #### nginx-study
 
-[1.&nbsp; --with-http_stub_status_module](./http_stub_status_module.md)
+[1.&nbsp; --with-http_stub_status_module](./nginx/http_stub_status_module.md)
 
-[2.&nbsp; worker_processes、worker_cpu_affinity](./worker_processes.md)
+[2.&nbsp; worker_processes、worker_cpu_affinity](./nginx/worker_processes.md)
 
-[3.&nbsp; worker_connections](./worker_connections.md)
+[3.&nbsp; worker_connections](./nginx/worker_connections.md)
 
-[4.&nbsp; worker_rlimit_nofile](./worker_rlimit_nofile.md)
+[4.&nbsp; worker_rlimit_nofile](./nginx/worker_rlimit_nofile.md)
 
-[5.&nbsp; sendfile](./sendfile.md)
+[5.&nbsp; sendfile](./nginx/sendfile.md)
 
-[6.&nbsp; tcp proxy](./tcp_proxy.md)
+[6.&nbsp; tcp proxy](./nginx/tcp_proxy.md)
 
 #### zookeeper-study
 
