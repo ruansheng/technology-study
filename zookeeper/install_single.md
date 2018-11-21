@@ -42,3 +42,13 @@ Mode: standalone
 Node count: 4
 Connection closed by foreign host.
 ```
+
+## 停止
+```
+# cd bin
+# sh zkServer.sh stop
+ZooKeeper JMX enabled by default
+Using config: /Users/ruansheng/Downloads/zookeeper-3.4.13/bin/../conf/zoo.cfg
+-n Stopping zookeeper ...
+STOPPED
+```
