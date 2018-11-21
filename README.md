@@ -71,7 +71,8 @@
 [1.&nbsp; install kafka](./kafka/install.md)
 
 [2.&nbsp; kafka broker config](./kafka/broker_config.md)
-[2.&nbsp; kafka topic config](./kafka/topic_config.md)
+
+[3.&nbsp; kafka topic config](./kafka/topic_config.md)
 
 #### other-study
 
