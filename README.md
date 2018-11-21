@@ -60,6 +60,10 @@
 
 [6.&nbsp; tcp proxy](./tcp_proxy.md)
 
+#### zookeeper-study
+
+[1.&nbsp; install zk](./zookeeper/install.md)
+
 #### other-study
 
 [1.&nbsp; filebeats](./other/filebeats.md)
