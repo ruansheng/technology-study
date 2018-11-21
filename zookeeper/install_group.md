@@ -55,6 +55,14 @@ Node count: 4
 Connection closed by foreign host.
 ```
 
+## 查看状态
+```
+# sh zkServer.sh status
+ZooKeeper JMX enabled by default
+Using config: /Users/ruansheng/Downloads/zookeeper/zookeeper-3.4.13-3/bin/../conf/zoo.cfg
+Mode: follower
+```
+
 ## 停止
 ```
 # cd bin
