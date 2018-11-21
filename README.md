@@ -70,6 +70,8 @@
 
 [1.&nbsp; install kafka](./kafka/install.md)
 
+[2.&nbsp; kafka config](./kafka/config.md)
+
 #### other-study
 
 [1.&nbsp; filebeats](./other/filebeats.md)
