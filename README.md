@@ -64,6 +64,10 @@
 
 [1.&nbsp; install zk](./zookeeper/install.md)
 
+#### kafka-study
+
+[1.&nbsp; install kafka](./kafka/install.md)
+
 #### other-study
 
 [1.&nbsp; filebeats](./other/filebeats.md)
