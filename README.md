@@ -74,6 +74,8 @@
 
 [3.&nbsp; kafka topic config](./kafka/topic_config.md)
 
+[4.&nbsp; kafka send](./kafka/send.md)
+
 #### other-study
 
 [1.&nbsp; filebeats](./other/filebeats.md)
