@@ -76,6 +76,8 @@
 
 [4.&nbsp; kafka send](./kafka/send.md)
 
+[4.&nbsp; kafka acks](./kafka/acks.md)
+
 #### other-study
 
 [1.&nbsp; filebeats](./other/filebeats.md)
