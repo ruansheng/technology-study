@@ -78,6 +78,10 @@
 
 [4.&nbsp; kafka acks](./kafka/acks.md)
 
+[5.&nbsp; kafka log.dirs](./kafka/log_dirs.md)
+
+[6.&nbsp; kafka num.partitions](./kafka/num_partitions.md)
+
 #### other-study
 
 [1.&nbsp; filebeats](./other/filebeats.md)
