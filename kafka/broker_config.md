@@ -10,9 +10,17 @@
 kafka默认会监听port 9092来启动，可以设置成任意的端口，注意:如果设置1024以下的端口，需要以root权限启动
 
 ### zookeeper.connect
+```
 用于保存broker元数据的zookeeper地址，多个zookeeper地址用逗号来分隔，例如:
 zookeeper.connect=hostname:port/path,hostname:port/path,hostname:port/path
 path是可选的zookeeper路径，作为kafka集群的chroot，如果不指定，默认使用根路径，如果指定的chroot不存在，broker在启动的时候会创建
+ZooKeeper连接字符串的格式为：hostname:port，此处hostname和port分别是ZooKeeper集群中某个节点的host和port；为了当某个host宕掉之后你能通过其他ZooKeeper节点进行连接，你可以按照一下方式制定多个hosts：
+hostname1:port1, hostname2:port2, hostname3:port3.
+
+ZooKeeper 允许你增加一个“chroot”路径，将集群中所有kafka数据存放在特定的路径下。当多个Kafka集群或者其他应用使用相同ZooKeeper集群时，可以使用这个方式设置数据存放路径。这种方式的实现可以通过这样设置连接字符串格式，如下所示：
+hostname1：port1，hostname2：port2，hostname3：port3/chroot/path
+这样设置就将所有kafka集群数据存放在/chroot/path路径下。注意，在你启动broker之前，你必须创建这个路径，并且consumers必须使用相同的连接格式。
+```
 
 ### log.dirs
 Kafka把所有消息都保存在磁盘上，存放这些日志片段的目录是通过log.dirs指定的，用逗号分隔的多个本地文件系统路径，
