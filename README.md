@@ -86,6 +86,8 @@
 
 [8.&nbsp; kafka unclean.leader.election](./kafka/unclean_leader_election.md)
 
+[9.&nbsp; kafka min.insync.replicas](./kafka/min_insync_replicas.md)
+
 #### other-study
 
 [1.&nbsp; filebeats](./other/filebeats.md)
