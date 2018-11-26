@@ -1,5 +1,5 @@
 ## replication.factor
-kafka的默认复制系数是3，意味着每个分区会有3个副本，1个leader副本+2个同步副本，保证高可用
+kafka的默认复制系数是3，意味着每个分区会有3个副本，1个leader副本+2个follower副本，保证高可用
 
 ## 动态指定replication.factor
 ```
