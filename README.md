@@ -88,6 +88,12 @@
 
 [9.&nbsp; kafka min.insync.replicas](./kafka/min_insync_replicas.md)
 
+[10.&nbsp; kafka delete.topic.enable](./kafka/delete_topic_enable.md)
+
+[11.&nbsp; kafka kafka-topics.sh](./kafka/kafka_topics_sh.md)
+
+[12.&nbsp; kafka kafka-consumer-groups.sh](./kafka/kafka_consumer_groups_sh.md)
+
 #### other-study
 
 [1.&nbsp; filebeats](./other/filebeats.md)
