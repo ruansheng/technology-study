@@ -82,6 +82,8 @@
 
 [6.&nbsp; kafka num.partitions](./kafka/num_partitions.md)
 
+[7.&nbsp; kafka replication.factor](./kafka/replication_factor.md)
+
 #### other-study
 
 [1.&nbsp; filebeats](./other/filebeats.md)
