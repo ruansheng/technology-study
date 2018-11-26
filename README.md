@@ -84,6 +84,8 @@
 
 [7.&nbsp; kafka replication.factor](./kafka/replication_factor.md)
 
+[8.&nbsp; kafka unclean.leader.election](./kafka/unclean_leader_election.md)
+
 #### other-study
 
 [1.&nbsp; filebeats](./other/filebeats.md)
