@@ -94,6 +94,8 @@
 
 [12.&nbsp; kafka kafka-consumer-groups.sh](./kafka/kafka_consumer_groups_sh.md)
 
+[13.&nbsp; kafka __consumer_offests](./kafka/__consumer_offests.md)
+
 #### other-study
 
 [1.&nbsp; filebeats](./other/filebeats.md)
