@@ -162,8 +162,12 @@ docker run -itd ......
 创建数据卷: 此时 容器中 /root/b 被映射到宿主机类似这样的文件中 /var/lib/docker/volumes/beb56816939b54f4b9699e061c6629280ec6543b2183d0cbf8cebc2ff8375357/_data
 docker run -itd -v /root/b ....
 
-挂载宿主机目录到容器中: 此时 宿主机中/tmp/a 映射到容器中 /root/b
+挂载宿主机目录到容器中: 此时 宿主机中/tmp/a 映射到容器中 /root/b，-v 参数必须使用绝对路径，路径不存在时，docker将自动创建
+/root/b如果存在将会被覆盖，
 docker run -itd -v /tmp/a:/root/b ....
+
+以只读的方式挂载一个数据卷
+docker run -itd -v /tmp/a:/root/b:ro ....
 
 docker inspect 容器名/容器ID   // 可以查看容器卷在宿主机中的挂载位置
 ```
