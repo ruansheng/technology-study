@@ -35,10 +35,6 @@ Docker是居于容器技术的轻量虚拟化，docker虚拟化技术是居于�
 #### Docker Server
 Docker server也叫 Docker daemon，其功能是接收来自客户端的请求，功能涉及了容器、镜像、存储等多方面的内容
 
-#### Libcontainer 容器引擎
-Docker是建立在Libcontainer之上的
-容器的创建、删除等生命周期管理都是通过Libcontainer来实现的
-
 #### LXC
 LXC又名Linux container，是一种虚拟化的解决方案，这种是内核级的虚拟化。(主流的解决方案Xen ,KVM, LXC)
 LXC将Linux进程沙盒化，使得进程之间相互隔离，并且能够控制各进程的资源分配。
@@ -48,6 +44,13 @@ LXC将Linux进程沙盒化，使得进程之间相互隔离，并且能够控制
 
 #### Cgroup
 control group 控制组，主要做资源控制，原理是将一组进程放在一个控制组李，通过给控制组分配指定可用资源，达到控制一组进程可用资源的目的
+
+#### rootfs
+rootfs是根文件系统，在docker中的作用是"文件系统隔离"
+
+#### Libcontainer 容器引擎
+Docker是建立在Libcontainer之上的
+容器的创建、删除等生命周期管理都是通过Libcontainer来实现的
 
 #### 容器创建的原理
 容器= cgroup + namespace + rootfs + 容器引擎
