@@ -1,19 +1,15 @@
 ## Docker 简单使用分享
 
-### 大纲
-1. Docker的简单介绍
-2. 虚拟机和容器
-3. 什么是镜像
-4. 什么是容器
-
 #### Docker的简单介绍
 轻量级的虚拟化技术
 
 #### 虚拟机和容器
+```
 虚拟机:
   占用资源多、冗余步骤多、启动慢
 容器:
   启动快、资源占用少、体积小
+```
 
 #### 什么是镜像
 镜像就好比是模板，镜像是用来启动容器的只读模板
@@ -26,10 +22,15 @@
 也可部署私有的镜像仓库服务，类似于github、gitlib的关系
 
 #### Hypervisor虚拟化 与 Docker虚拟化
+```
+Hypervisor虚拟化:
 一种运行在物理服务器和操作系统之间的中间层软件，hypervisor是所有虚拟化技术的核心;
+关于Hypervisor可以阅读(https://www.ibm.com/developerworks/cn/linux/l-hypervisor/)
+
+Docker虚拟化:
 Docker是居于容器技术的轻量虚拟化，docker虚拟化技术是居于内核的Cgroup和Namespace技术，
 没有Hypervisor层的开销，处理逻辑与内核深度融合，所以在很多方面，它的性能与物理机非常接近
-关于Hypervisor可以阅读(https://www.ibm.com/developerworks/cn/linux/l-hypervisor/)
+```
 
 #### Docker Server
 Docker server也叫 Docker daemon，其功能是接收来自客户端的请求，功能涉及了容器、镜像、存储等多方面的内容
