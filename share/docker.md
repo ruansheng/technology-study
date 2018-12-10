@@ -159,6 +159,8 @@ docker run -itd ......
 #### 容器卷 与 卷容器
 容器内部数据在容器被删除后，数据将丢失，为了能够持久化保存数据，Docker提出了卷(volume)的概念
 ```
+容器卷:
+
 创建数据卷: 此时 容器中 /root/b 被映射到宿主机类似这样的文件中 /var/lib/docker/volumes/beb56816939b54f4b9699e061c6629280ec6543b2183d0cbf8cebc2ff8375357/_data
 docker run -itd -v /root/b ....
 
@@ -170,6 +172,20 @@ docker run -itd -v /tmp/a:/root/b ....
 docker run -itd -v /tmp/a:/root/b:ro ....
 
 docker inspect 容器名/容器ID   // 可以查看容器卷在宿主机中的挂载位置
+```
+```
+卷容器:
+
+创建 卷容器
+docker create -v /dbdata --name dbdata image_name /bin/true
+
+多个容器使用同一个卷容器
+docker run -itd --volumes-from dbdata --name db1 image_name
+docker run -itd --volumes-from dbdata --name db2 image_name
+也可以使用
+docker run -itd --volumes-from db1 --name db3 image_name
+即便删除db1 db2 甚至初始化该数据卷的dbdata，该数据卷也不会被删除，
+只有在删除最后一个使用该数据卷的容器时显式的指定docker rm -v $CONTAINER 才会删除该数据卷
 ```
 
 #### Docker安全
