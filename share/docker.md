@@ -50,6 +50,7 @@ LXC将Linux进程沙盒化，使得进程之间相互隔离，并且能够控制
 control group 控制组，主要做资源控制，原理是将一组进程放在一个控制组李，通过给控制组分配指定可用资源，达到控制一组进程可用资源的目的
 
 #### 容器创建的原理
+容器= cgroup + namespace + rootfs + 容器引擎
 ```
 第一步:
 pid = clone(fun, stack, flags, clone_arg);
