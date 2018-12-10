@@ -156,7 +156,7 @@ docker run -itd ......
 在桥接模式下，Docker容器与Internet同学，以及不同容器之间的通信，都是通过iptables规则控制的
 ```
 
-#### volume 容器卷管理
+#### 容器卷 与 卷容器
 容器内部数据在容器被删除后，数据将丢失，为了能够持久化保存数据，Docker提出了卷(volume)的概念
 ```
 创建数据卷: 此时 容器中 /root/b 被映射到宿主机类似这样的文件中 /var/lib/docker/volumes/beb56816939b54f4b9699e061c6629280ec6543b2183d0cbf8cebc2ff8375357/_data
