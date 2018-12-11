@@ -96,6 +96,9 @@ docker rmi image_name/image_id
 
 查询镜像
 docker search mongo  // 默认将从官方镜像仓库查询
+
+下载镜像
+docker pull mongo
 ```
 
 #### Dockerfile
@@ -186,6 +189,24 @@ docker run -itd --volumes-from dbdata --name db2 image_name
 docker run -itd --volumes-from db1 --name db3 image_name
 即便删除db1 db2 甚至初始化该数据卷的dbdata，该数据卷也不会被删除，
 只有在删除最后一个使用该数据卷的容器时显式的指定docker rm -v $CONTAINER 才会删除该数据卷
+```
+
+#### Docker API
+```
+类似于elasticsearch一样，Docker Daemon提供的是Restful API让Docker client与之通信
+
+如果没有特殊配置，docker会监听本机一个unix socket，默认为unix://var/run/docker.sock
+
+测试:
+echo -e "GET /images/json HTTP/1.0\r\n" | nc -U /var/run/docker.sock
+
+配置监听端口
+docker -d -H unix://var/run/docker.sock -Htcp://0.0.0.0:5678
+
+PING接口:
+curl -X GET http//localhost:5678/_ping
+OK
+
 ```
 
 #### Docker安全
