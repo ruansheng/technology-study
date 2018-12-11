@@ -206,7 +206,6 @@ docker -d -H unix://var/run/docker.sock -Htcp://0.0.0.0:5678
 PING接口:
 curl -X GET http//localhost:5678/_ping
 OK
-
 ```
 
 #### Docker安全
@@ -229,4 +228,21 @@ OK
 3. 限制块设备IO
 4. 限制ulimit
 
+#### 容器操作
+```
+创建容器
+docker run -itd --net=host --name my_mysql -p 3306 -v /a:/b mysql
+
+停止容器
+docker stop my_mysql
+
+启动容器
+docker start my_mysql
+
+重启容器
+docker restart my_mysql
+
+进入容器
+docker exec -it my_mysql bash
+```
 
