@@ -49,8 +49,13 @@ control group 控制组，主要做资源控制，原理是将一组进程放在
 rootfs是根文件系统，在docker中的作用是"文件系统隔离"
 
 #### Libcontainer 容器引擎
+```
 Docker是建立在Libcontainer之上的
 容器的创建、删除等生命周期管理都是通过Libcontainer来实现的
+容器引擎是一种驱动和管理容器生命周期的runtime工具
+runC是docker的runtime工具
+项目地址: https://github.com/opencontainers/runc
+```
 
 #### 容器创建的原理
 容器= cgroup + namespace + rootfs + 容器引擎
