@@ -1,5 +1,5 @@
 ### ngx_http_fastcgi_module模块
-允许将请求传递给另一台服务器，转发请求到FastCGI服务器
+默认就加载的模块，允许将请求传递给另一台服务器，转发请求到FastCGI服务器
 
 #### fastcgi_pass
 ```
