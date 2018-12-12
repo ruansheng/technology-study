@@ -60,6 +60,8 @@
 
 [6.&nbsp; tcp proxy](./nginx/tcp_proxy.md)
 
+[7.&nbsp; ngx_http_fastcgi_module](./nginx/ngx_http_fastcgi_module.md)
+
 #### zookeeper-study
 
 [1.&nbsp; install single zk](./zookeeper/install_single.md)
