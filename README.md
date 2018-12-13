@@ -62,6 +62,8 @@
 
 [7.&nbsp; ngx_http_fastcgi_module](./nginx/ngx_http_fastcgi_module.md)
 
+[8.&nbsp; add_header](./nginx/add_header.md)
+
 #### zookeeper-study
 
 [1.&nbsp; install single zk](./zookeeper/install_single.md)
