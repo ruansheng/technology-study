@@ -90,3 +90,21 @@ fastcgi_param  SERVER_NAME        $server_name;
 # PHP only, required if PHP was built with --enable-force-cgi-redirect
 fastcgi_param  REDIRECT_STATUS    200;
 ```
+
+#### fastcgi_cache_path
+```
+语法：fastcgi_cache_path path [levels=m:n] keys_zone=name:size [inactive=time] [max_size=size]
+默认值：none
+使用字段：http
+clean_time参数在0.7.45版本中已经移除。
+这个指令指定FastCGI缓存的路径以及其他的一些参数，所有的数据以文件的形式存储，缓存的关键字(key)和文件名为代理的url计算出的MD5值。
+Level参数设置缓存目录的目录分级以及子目录的数量，例如指令如果设置为：
+
+fastcgi_cache_path  /data/nginx/cache  levels=1:2   keys_zone=one:10m;
+那么数据文件将存储为：
+/data/nginx/cache/c/29/b7f54b2df7773722d382f4809d65029c
+
+缓存中的文件首先被写入一个临时文件并且随后被移动到缓存目录的最后位置，0.8.9版本之后可以将临时文件和缓存文件存储在不同的文件系统，但是需要明白这种移动并不是简单的原子重命名系统调用，而是整个文件的拷贝，所以最好在fastcgi_temp_path和fastcgi_cache_path的值中使用相同的文件系统。
+另外，所有活动的关键字及数据相关信息都存储于共享内存池，这个值的名称和大小通过key_zone参数指定，inactive参数指定了内存中的数据存储时间，默认为10分钟。
+max_size参数设置缓存的最大值，一个指定的cache manager进程将周期性的删除旧的缓存数据
+```
