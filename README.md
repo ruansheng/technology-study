@@ -64,7 +64,9 @@
 
 [8.&nbsp; add_header](./nginx/add_header.md)
 
-[8.&nbsp; accept_mutex](./nginx/accept_mutex.md)
+[9.&nbsp; accept_mutex](./nginx/accept_mutex.md)
+
+[10.&nbsp; multi_accept](./nginx/multi_accept.md)
 
 #### zookeeper-study
 
