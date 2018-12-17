@@ -68,6 +68,8 @@
 
 [10.&nbsp; multi_accept](./nginx/multi_accept.md)
 
+[11.&nbsp; server_tokens](./nginx/server_tokens.md)
+
 #### zookeeper-study
 
 [1.&nbsp; install single zk](./zookeeper/install_single.md)
