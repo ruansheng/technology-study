@@ -72,6 +72,10 @@
 
 [12.&nbsp; keepalive_timeout](./nginx/keepalive_timeout.md)
 
+[13.&nbsp; server_name](./nginx/server_name.md)
+
+[14.&nbsp; rewrite](./nginx/rewrite.md)
+
 #### zookeeper-study
 
 [1.&nbsp; install single zk](./zookeeper/install_single.md)
