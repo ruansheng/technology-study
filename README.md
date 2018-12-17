@@ -70,6 +70,8 @@
 
 [11.&nbsp; server_tokens](./nginx/server_tokens.md)
 
+[12.&nbsp; keepalive_timeout](./nginx/keepalive_timeout.md)
+
 #### zookeeper-study
 
 [1.&nbsp; install single zk](./zookeeper/install_single.md)
