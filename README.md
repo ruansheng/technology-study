@@ -64,6 +64,8 @@
 
 [8.&nbsp; add_header](./nginx/add_header.md)
 
+[8.&nbsp; accept_mutex](./nginx/accept_mutex.md)
+
 #### zookeeper-study
 
 [1.&nbsp; install single zk](./zookeeper/install_single.md)
