@@ -31,3 +31,58 @@ if (-f $request_filename) {
 }
 ```
 
+#### break
+```
+server{
+    ...
+    rewrite ^(.*)$ /2.html break;
+    ...
+}
+不再执行余下的语句，完成本次请求，地址栏url不变(只有一个请求)
+
+server{
+    ...
+    rewrite ^(.*)$ http://www.baidu.com last;
+    ...
+}
+客户端请求，url重写后，响应302给客户端，客户端发起一个新的请求
+```
+
+#### last
+```
+server{
+    ...
+    rewrite ^(.*)$ /2.html last;
+    ...
+}
+不再执行余下的语句，完成本次请求，地址栏url不变(只有一个请求)
+
+server{
+    ...
+    rewrite ^(.*)$ http://www.baidu.com last;
+    ...
+}
+
+客户端请求，url重写后，响应302给客户端，客户端发起一个新的请求
+```
+
+#### redirect
+```
+server{
+    ...
+    rewrite ^(.*)$ /2.html redirect;
+    ...
+}
+返回302临时重定向，地址栏显示重定向后的url，配置不当可能出现死循环重定向
+```
+
+#### permanent
+```
+server{
+    ...
+    rewrite ^(.*)$ /2.html permanent;
+    ...
+}
+返回301永久重定向, 地址栏显示重定向后的url
+```
+
