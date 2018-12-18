@@ -13,9 +13,8 @@ sysctl配置与显示在/proc/sys目录中的内核参数．可以用sysctl来�
 ```
 1) #echo 1 > /proc/sys/net/ipv4/ip_forward
 2) #sysctl -w net.ipv4.ip_forward=1
-以上两种方法都可能立即开启路由功能，但如果系统重启，或执行了
-# service network restart
-命令，所设置的值即会丢失，如果想永久保留配置，可以修改/etc/sysctl.conf文件
+以上两种方法都可能立即开启路由功能，但如果系统重启，或执行了service network restart命令，所设置的值即会丢失
+如果想永久保留配置，可以修改/etc/sysctl.conf文件
 ```
 
 #### sysctl -p
