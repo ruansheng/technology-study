@@ -18,5 +18,11 @@ sysctl配置与显示在/proc/sys目录中的内核参数．可以用sysctl来�
 ```
 
 #### sysctl -p
+```
 从指定的文件加载系统参数，如不指定即从/etc/sysctl.conf中加载
+
+sysctl -p
+或者
+sysctl -p /etc/sysctl.conf
+```
 
