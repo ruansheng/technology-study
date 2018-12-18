@@ -34,6 +34,10 @@
 
 [2.&nbsp; fifo](./linux/fifo.md)
 
+[3.&nbsp; time_wait](./linux/time_wait.md)
+
+[4.&nbsp; sysctl](./linux/sysctl.md)
+
 #### http-study
 
 [1.&nbsp; If-Modified-Since Last-Modified](./http/modified.md)
