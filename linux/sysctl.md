@@ -40,3 +40,16 @@ sysctl -p
 sysctl -p /etc/sysctl.conf
 ```
 
+### sysctl.conf 和 /proc/sys 的关系
+```
+RedHat提供了非常好的方法，使我们可以在系统运行时更改内核参数，而不需要重新引导系统。这是通过/proc虚拟文件系统实现的。
+/proc/sys目录下存放着大多数的内核参数，并且设计成可以在系统运行的同时进行更改, 不过重新启动机器后会失效，
+可以通过更改/proc/sys中内核参数对应的文件 /etc/sysctl.conf 的内核参数来永久更改
+
+/proc/sys下内核文件与配置文件 sysctl.conf中变量的对应关系，
+由于可以修改的内核参数都在/proc/sys目录下，所以sysctl.conf的变量名省略了目录的前面部分（/proc/sys）
+将/proc/sys中的文件转换成sysctl中的变量依据下面两个简单的规则：
+　　1．去掉前面部分/proc/sys
+　　2．将文件名中的斜杠变为点
+　　这两条规则可以将/proc/sys中的任一文件名转换成sysctl中的变量名。
+```
