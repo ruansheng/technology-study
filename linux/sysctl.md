@@ -6,18 +6,32 @@ sysctl配置与显示在/proc/sys目录中的内核参数．可以用sysctl来�
 ```
 
 #### sysctl -a
+```
 显示所有系统参数
 
-#### sysctl -w net.ipv4.ip_forward=1
-临时改变某个指定参数的值
+例如:
+#sysctl -a
+abi.vsyscall32 = 1
+crypto.fips_enabled = 0
+debug.exception-trace = 1
+debug.kprobes-optimization = 1
+debug.panic_on_rcu_stall = 0
+dev.hpet.max-user-freq = 64
+...
 ```
+
+### sysctl -w
+```
+临时改变某个指定参数的值
+sysctl -w net.ipv4.ip_forward=1
+
 1) #echo 1 > /proc/sys/net/ipv4/ip_forward
 2) #sysctl -w net.ipv4.ip_forward=1
 以上两种方法都可能立即开启路由功能，但如果系统重启，或执行了service network restart命令，所设置的值即会丢失
 如果想永久保留配置，可以修改/etc/sysctl.conf文件
 ```
 
-#### sysctl -p
+### sysctl -p
 ```
 从指定的文件加载系统参数，如不指定即从/etc/sysctl.conf中加载
 
