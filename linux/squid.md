@@ -30,6 +30,7 @@ http_access deny badsite
 
 2. 重启squid
 systemctl restart squid
+# squid -k reconfig 该命令重新加载配置文件
 
 3. 设置浏览器http代理
 设置http https 代理 127.0.0.1 3128
