@@ -23,5 +23,18 @@ tcp6       0      0 :::3128                 :::*                    LISTEN      
 
 ### 正向代理
 ```
+1. 添加squid配置文件
+#vim /etc/squid/squid.conf
+acl badsite dstdomain www.baidu.com
+http_access deny badsite
 
+2. 重启squid
+systemctl restart squid
+
+3. 设置浏览器http代理
+设置http https 代理 127.0.0.1 3128
+
+4. 请求
+https://www.baidu.com
+结果请求不通
 ```
