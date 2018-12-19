@@ -124,6 +124,10 @@
 
 [3.&nbsp; jenkins](./other/jenkins.md)
 
+#### docker
+
+[1.&nbsp; --privileged](./docker/privileged.md)
+
 #### share
 
 [1.&nbsp; docker](./share/docker.md)
