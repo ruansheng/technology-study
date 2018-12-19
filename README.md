@@ -38,6 +38,8 @@
 
 [4.&nbsp; sysctl](./linux/sysctl.md)
 
+[5.&nbsp; squid](./linux/squid.md)
+
 #### http-study
 
 [1.&nbsp; If-Modified-Since Last-Modified](./http/modified.md)
