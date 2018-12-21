@@ -38,7 +38,9 @@
 
 [4.&nbsp; sysctl](./linux/sysctl.md)
 
-[5.&nbsp; squid](./linux/squid.md)
+[5.&nbsp; systemctl systemd](./linux/systemctl.md)
+
+[6.&nbsp; squid](./linux/squid.md)
 
 #### http-study
 
