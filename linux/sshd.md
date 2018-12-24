@@ -5,7 +5,19 @@ SSH (Secure Shell) 是一种能够以安全的方式提供远程登录的协议
 2.基于秘钥的验证---需要本地生成秘钥对，然后把秘钥对中的公钥上传至服务器
 ```
 
-### 配置文件 /etc/sshd/sshd_config
+### 安装
+```
+安装
+# yum -y install openssh-server
+
+启动
+# /usr/sbin/sshd
+
+重启
+# /usr/sbin/sshd restart
+```
+
+### 配置文件 /etc/ssh/sshd_config
 |配置项            | 值    |               说明  |
 | :------| :------: | :------: |
 |Port           |   22              |  默认的sshd服务端口 |
@@ -20,5 +32,6 @@ SSH (Secure Shell) 是一种能够以安全的方式提供远程登录的协议
 |MaxSessions       | 10   | 最大终端数 |
 |PasswordAuthentication | yes |  是否允许密码验证 |
 |PermitEmptyPasswords   | no  | 是否允许空密码登录(不安全) |
+
 
 
