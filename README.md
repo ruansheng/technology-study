@@ -42,6 +42,8 @@
 
 [6.&nbsp; squid](./linux/squid.md)
 
+[7.&nbsp; sshd](./linux/sshd.md)
+
 #### http-study
 
 [1.&nbsp; If-Modified-Since Last-Modified](./http/modified.md)
