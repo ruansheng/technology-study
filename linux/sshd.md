@@ -6,7 +6,6 @@ SSH (Secure Shell) 是一种能够以安全的方式提供远程登录的协议
 ```
 
 ### 配置文件 /etc/sshd/sshd_config
-```
 |配置项            | 值    |               说明  |
 | :------| ------: | :------: |
 |Port           |   22              |  默认的sshd服务端口 |
@@ -21,5 +20,5 @@ SSH (Secure Shell) 是一种能够以安全的方式提供远程登录的协议
 |MaxSessions       | 10   | 最大终端数 |
 |PasswordAuthentication | yes |  是否允许密码验证 |
 |PermitEmptyPasswords   | no  | 是否允许空密码登录(不安全) |
-```
+
 
