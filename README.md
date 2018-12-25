@@ -44,6 +44,8 @@
 
 [7.&nbsp; sshd](./linux/sshd.md)
 
+[8.&nbsp; env](./linux/env.md)
+
 #### http-study
 
 [1.&nbsp; If-Modified-Since Last-Modified](./http/modified.md)
