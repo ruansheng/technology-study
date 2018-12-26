@@ -48,6 +48,8 @@
 
 [9.&nbsp; runlevel](./linux/runlevel.md)
 
+[10.&nbsp; service systemctl](./linux/service_systemctl.md)
+
 #### http-study
 
 [1.&nbsp; If-Modified-Since Last-Modified](./http/modified.md)
