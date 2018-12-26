@@ -50,6 +50,8 @@
 
 [10.&nbsp; service systemctl](./linux/service_systemctl.md)
 
+[11.&nbsp; udev](./linux/udev.md)
+
 #### http-study
 
 [1.&nbsp; If-Modified-Since Last-Modified](./http/modified.md)
