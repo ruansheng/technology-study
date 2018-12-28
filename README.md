@@ -52,6 +52,8 @@
 
 [11.&nbsp; udev](./linux/udev.md)
 
+[21.&nbsp; file hole](./linux/file_hole.md)
+
 #### http-study
 
 [1.&nbsp; If-Modified-Since Last-Modified](./http/modified.md)
