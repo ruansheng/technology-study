@@ -52,7 +52,9 @@
 
 [11.&nbsp; udev](./linux/udev.md)
 
-[21.&nbsp; file hole](./linux/file_hole.md)
+[12.&nbsp; file hole](./linux/file_hole.md)
+
+[13.&nbsp; ln](./linux/ln.md)
 
 #### http-study
 
