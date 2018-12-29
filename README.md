@@ -60,6 +60,8 @@
 
 [15.&nbsp; SELinux](./linux/selinux.md)
 
+[16.&nbsp; jobs fg bg kill](./linux/jobs_fg_bg_kill.md)
+
 #### http-study
 
 [1.&nbsp; If-Modified-Since Last-Modified](./http/modified.md)
