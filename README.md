@@ -62,6 +62,8 @@
 
 [16.&nbsp; jobs fg bg kill](./linux/jobs_fg_bg_kill.md)
 
+[17.&nbsp; history](./linux/history.md)
+
 #### http-study
 
 [1.&nbsp; If-Modified-Since Last-Modified](./http/modified.md)
