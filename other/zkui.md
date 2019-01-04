@@ -17,5 +17,5 @@ zkui是java写的一个开源系统，源码在github上面  https://github.com/
     5.启动服务  java -jar zkui-2.0-SNAPSHOT-jar-with-dependencies.jar， 可用nohup启动
     6.测试，访问 http://localhost:9090，如果看到界面则表示启动成功
     7.默认的账号密码  username:admin      password:manager
-    8.注意登录的时候使用admin/manager看不到path信息，用appconfig/appconfig登录才能看到
+    8.注意登录的时候使用admin/manager看不到path信息，用appconfig/appconfig登录之后，再用admin/manager登录就能看到了
 ```
