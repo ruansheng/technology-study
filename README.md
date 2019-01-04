@@ -150,6 +150,8 @@
 
 [3.&nbsp; jenkins](./other/jenkins.md)
 
+[4.&nbsp; zkui](./other/zkui.md)
+
 #### docker
 
 [1.&nbsp; --privileged](./docker/privileged.md)
