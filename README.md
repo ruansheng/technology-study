@@ -110,6 +110,8 @@
 
 [16.&nbsp; /etc/motd](./nginx/etc_motd.md)
 
+[17.&nbsp; /etc/issue、/etc/issue.net](./nginx/etc_issue.md)
+
 #### zookeeper-study
 
 [1.&nbsp; install single zk](./zookeeper/install_single.md)
