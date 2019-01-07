@@ -108,6 +108,8 @@
 
 [15.&nbsp; ngx_log_if](./nginx/ngx_log_if.md)
 
+[16.&nbsp; /etc/motd](./nginx/etc_motd.md)
+
 #### zookeeper-study
 
 [1.&nbsp; install single zk](./zookeeper/install_single.md)
