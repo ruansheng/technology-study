@@ -106,6 +106,8 @@
 
 [14.&nbsp; rewrite](./nginx/rewrite.md)
 
+[15.&nbsp; ngx_log_if](./nginx/ngx_log_if.md)
+
 #### zookeeper-study
 
 [1.&nbsp; install single zk](./zookeeper/install_single.md)
