@@ -112,6 +112,8 @@
 
 [17.&nbsp; /etc/issue、/etc/issue.net](./nginx/etc_issue.md)
 
+[18.&nbsp; login shell、non-login shell config file](./nginx/bash_config_file.md)
+
 #### zookeeper-study
 
 [1.&nbsp; install single zk](./zookeeper/install_single.md)
