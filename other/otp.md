@@ -32,13 +32,13 @@
            secret 指定生成口令的种子密钥，长度为128字节，对应长度为16的字符串
            period=60&digits=8参数可以省略，默认值period=30&digits=6 注意: digits 只能是6~8之间，指定生成的口令长度
    构造好协议，可以在Authenticator手动输入，也可以把这个协议字符串写入二维码，用Authenticator扫描二维码，如果协议错误，会提示无效的协议格式
-   [google官方协议wiki](https://github.com/google/google-authenticator/wiki/Key-Uri-Format)
 
 3. 服务端接入OTP算法
    注意: 如果Authenticator协议上配置的是60秒、或者8位长度的口令，那算法上面要注意达成一致
    后面给出golang的服务端生成动态口令的算法程序
    同一时间服务端生成的code和Authenticator生成的code是一致的
 ```
+[google官方协议wiki](https://github.com/google/google-authenticator/wiki/Key-Uri-Format)
 
 ### golang口令算法(也有其他各种语言的算法实现)
 ```
