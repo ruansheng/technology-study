@@ -26,11 +26,13 @@
 1. 下载Authenticator，这个app内置OTP算法，基于时间同步的令牌算法
 
 2. 构造Authenticator协议
-   协议格式为: otpauth://totp/demo.com?secret=cdsfdsesdfresgfs&period=60&digits=8
+   协议格式为: otpauth://totp/demo.com?secret=cdsfdsesdfresgfs&period=60&digits=8&issuer=Example
       参数解释:
-           demo.com 可以替换成其它字符串，这个字符串会出现在Authenticator每个item下方，可以认为是名称
+           demo.com 可以替换成其它字符串，这个字符串会出现在Authenticator每个item左下方，可以认为是名称
            secret 指定生成口令的种子密钥，长度为128字节，对应长度为16的字符串
-           period=60&digits=8参数可以省略，默认值period=30&digits=6 注意: digits 只能是6~8之间，指定生成的口令长度
+           period=60 参数可以省略，默认值period=30
+           digits=8  参数可以省略，默认值digits=6 注意: digits 只能是6~8之间，指定生成的口令长度
+           issuer=Example 参数可以省略 显示在Authenticator item 的左上角
    构造好协议，可以在Authenticator手动输入，也可以把这个协议字符串写入二维码，用Authenticator扫描二维码，如果协议错误，会提示无效的协议格式
 
 3. 服务端接入OTP算法
