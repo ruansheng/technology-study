@@ -64,6 +64,12 @@
 
 [17.&nbsp; history](./linux/history.md)
 
+[18.&nbsp; /etc/motd](./linux/etc_motd.md)
+
+[19.&nbsp; /etc/issue、/etc/issue.net](./linux/etc_issue.md)
+
+[20.&nbsp; login shell、non-login shell config file](./linux/bash_config_file.md)
+
 #### http-study
 
 [1.&nbsp; If-Modified-Since Last-Modified](./http/modified.md)
@@ -107,12 +113,6 @@
 [14.&nbsp; rewrite](./nginx/rewrite.md)
 
 [15.&nbsp; ngx_log_if](./nginx/ngx_log_if.md)
-
-[16.&nbsp; /etc/motd](./nginx/etc_motd.md)
-
-[17.&nbsp; /etc/issue、/etc/issue.net](./nginx/etc_issue.md)
-
-[18.&nbsp; login shell、non-login shell config file](./nginx/bash_config_file.md)
 
 #### zookeeper-study
 
