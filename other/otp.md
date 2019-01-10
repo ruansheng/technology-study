@@ -39,7 +39,7 @@
    同一时间服务端生成的code和Authenticator生成的code是一致的
 ```
 
-### golang口令算法
+### golang口令算法(也有其他各种语言的算法实现)
 ```
 package returncode
 
