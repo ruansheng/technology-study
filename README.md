@@ -70,6 +70,8 @@
 
 [20.&nbsp; login shell、non-login shell config file](./linux/bash_config_file.md)
 
+[21.&nbsp; su、sudo](./linux/su_sudo.md)
+
 #### http-study
 
 [1.&nbsp; If-Modified-Since Last-Modified](./http/modified.md)
