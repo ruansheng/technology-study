@@ -36,6 +36,7 @@
 3. 服务端接入OTP算法
    注意: 如果Authenticator协议上配置的是60秒、或者8位长度的口令，那算法上面要注意达成一致
    后面给出golang的服务端生成动态口令的算法程序
+   同一时间服务端生成的code和Authenticator生成的code是一致的
 ```
 
 ### golang口令算法
