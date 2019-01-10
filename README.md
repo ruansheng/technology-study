@@ -72,6 +72,8 @@
 
 [21.&nbsp; su、sudo](./linux/su_sudo.md)
 
+[22.&nbsp; /sbin/nologin](./linux/sbin_nologin.md)
+
 #### http-study
 
 [1.&nbsp; If-Modified-Since Last-Modified](./http/modified.md)
