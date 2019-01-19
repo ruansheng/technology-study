@@ -128,6 +128,9 @@ TCP建立连接完成握手的时间(建立连接时间)
 执行 onload 回调函数的时间
    window.performance.timing.loadEventEnd - window.performance.timing.loadEventStart
 
+白屏时间
+   window.performance.timing.domLoading - window.performance.timing.fetchStart
+
 
 所需字段:
    navigationStart
