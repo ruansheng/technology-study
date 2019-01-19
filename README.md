@@ -166,6 +166,8 @@
 
 [5.&nbsp; OTP，One-Time Password](./other/otp.md)
 
+[6.&nbsp; window.performance.timing](./other/window_performance_timing.md)
+
 #### docker
 
 [1.&nbsp; --privileged](./docker/privileged.md)
