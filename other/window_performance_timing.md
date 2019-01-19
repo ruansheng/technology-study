@@ -106,7 +106,7 @@ performance = {
 ### 网页解析时间节点
 ![image.png](./7e63b0174961f257d375e7f12ca790fe.png)
 
-### 计算指标
+### 关注指标
 ```
 页面加载完成时间
    window.performance.timing.loadEventEnd - window.performance.timing.navigationStart
