@@ -1,7 +1,6 @@
 ## window.performance.timing
 ```
-前端性能分析
-
+window.performance.timing 包含页面加载到执行完成的整个生命周期中不同执行步骤的执行时间
 ```
 ```
 performance = {
@@ -128,4 +127,23 @@ TCP 建立连接完成握手的时间
 
 执行 onload 回调函数的时间
    window.performance.timing.loadEventEnd - window.performance.timing.loadEventStart
+
+
+所需字段:
+   navigationStart
+   domainLookupStart
+   domainLookupEnd
+   connectStart
+   connectEnd
+   requestStart
+   responseStart
+   responseEnd
+   domComplete
+   loadEventStart
+   loadEventEnd
+
+展现图表:
+   1. url维度，按天维度，各指标的平均时间柱状图
+   2. url维度，按天维度，各指标的平均时间占比饼图
+   3. url维度，分钟维度各指标项平均时间进行聚合，曲线图展示(1分钟一个point)
 ```
