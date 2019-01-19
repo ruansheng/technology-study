@@ -107,22 +107,22 @@ performance = {
 
 ### 关注指标
 ```
-页面加载完成时间
+页面加载完成时间(整页时间)
    window.performance.timing.loadEventEnd - window.performance.timing.navigationStart
 
 解析 DOM 树结构的时间
    window.performance.timing.domComplete - window.performance.timing.responseEnd
 
-DNS 查询时间
+DNS查询时间(DNS时间)
    window.performance.timing.domainLookupEnd - window.performance.timing.domainLookupStart
 
-读取页面第一个字节的时间
+读取页面第一个字节的时间(首包时间)
    window.performance.timing.responseStart - window.performance.timing.navigationStart
 
 内容加载完成的时间
    window.performance.timing.responseEnd - window.performance.timing.requestStart
 
-TCP 建立连接完成握手的时间
+TCP建立连接完成握手的时间(建立连接时间)
    window.performance.timing.connectEnd - window.performance.timing.connectStart
 
 执行 onload 回调函数的时间
