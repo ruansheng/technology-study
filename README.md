@@ -122,7 +122,7 @@
 
 [1.&nbsp; install single zk](./zookeeper/install_single.md)
 
-[2.&nbsp; install group kafka](./kafka/install_group.md)
+[2.&nbsp; install group zk](./zookeeper/install_group.md)
 
 #### kafka-study
 
