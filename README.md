@@ -172,6 +172,10 @@
 
 [1.&nbsp; --privileged](./docker/privileged.md)
 
+#### golang
+
+[1.&nbsp; golang gc](./golang/gc.md)
+
 #### share
 
 [1.&nbsp; docker](./share/docker.md)
