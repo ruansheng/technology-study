@@ -124,6 +124,8 @@
 
 [2.&nbsp; install group zk](./zookeeper/install_group.md)
 
+[3.&nbsp; ZAB](./zookeeper/zab.md)
+
 #### kafka-study
 
 [1.&nbsp; install kafka](./kafka/install.md)
