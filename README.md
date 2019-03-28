@@ -178,6 +178,8 @@
 
 [1.&nbsp; golang gc](./golang/gc.md)
 
+[2.&nbsp; golang defer](./golang/defer.md)
+
 #### share
 
 [1.&nbsp; docker](./share/docker.md)
