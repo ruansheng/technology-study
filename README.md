@@ -180,6 +180,8 @@
 
 [2.&nbsp; golang defer](./golang/defer.md)
 
+[3.&nbsp; golang lock check](./golang/lock_check.md)
+
 #### share
 
 [1.&nbsp; docker](./share/docker.md)
