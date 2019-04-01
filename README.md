@@ -21,6 +21,8 @@
 
 [8.&nbsp; partition](./mysql/partition.md)
 
+[9.&nbsp; upsert](./mysql/upsert.md)
+
 #### redis-study
 
 [1.&nbsp; redis hash](./redis/redis_hash.md)
