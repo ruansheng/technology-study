@@ -184,6 +184,10 @@
 
 [3.&nbsp; golang lock check](./golang/lock_check.md)
 
+[4.&nbsp; golang runtime](./golang/runtime.md)
+
+[5.&nbsp; golang panic recover](./golang/panic_recover.md)
+
 #### share
 
 [1.&nbsp; docker](./share/docker.md)
