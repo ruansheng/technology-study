@@ -76,6 +76,8 @@
 
 [22.&nbsp; /sbin/nologin](./linux/sbin_nologin.md)
 
+[23.&nbsp; os uptime->load](./linux/uptime_load.md)
+
 #### http-study
 
 [1.&nbsp; If-Modified-Since Last-Modified](./http/modified.md)
@@ -187,6 +189,8 @@
 [4.&nbsp; golang runtime](./golang/runtime.md)
 
 [5.&nbsp; golang panic recover](./golang/panic_recover.md)
+
+[6.&nbsp; golang build、get、install、run](./golang/build_get_install_run.md)
 
 #### share
 
