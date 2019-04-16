@@ -23,6 +23,8 @@
 
 [9.&nbsp; upsert](./mysql/upsert.md)
 
+[10.&nbsp; tinytext、text、mediumtext、longtext](./mysql/text.md)
+
 #### redis-study
 
 [1.&nbsp; redis hash](./redis/redis_hash.md)
