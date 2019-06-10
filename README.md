@@ -2,6 +2,8 @@
 
 [1.&nbsp; strlen mb_strlen](./php/strlen_mb_strlen.md)
 
+[2.&nbsp; $_SERVER](./php/server.md)
+
 
 #### mysql-study
 
