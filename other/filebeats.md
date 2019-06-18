@@ -6,6 +6,7 @@
 
 
 ###安装filebeat
+```
 filebeat是kibana官方开发的一个组件，在kibanba的官网可以找到下载地址
 
 https://www.elastic.co/downloads/beats/filebeat
@@ -27,8 +28,10 @@ drwxr-xr-x 2 root root 4096 Sep 26 20:41 modules.d
 -rw-r--r-- 1 root root 802 Sep 26 20:43 README.md
 
 其中上面的filebeat就是二进制可执行文件
+```
 
 ###配置文件
+```
 filebeat.inputs:
 - paths:
 - /usr/local/nginx/logs/access.log
@@ -44,7 +47,7 @@ topic: bp_api_nginx_error_log
 output.kafka:
 hosts: ["xxx.xxx.xxx.xxx:9092", "xxx.xxx.xxx.xxx:9092", "xxx.xxx.xxx.xxx:9092"]
 topic: "%{[fields][topic]}"
-
+```
 
 
 ###启动fliebeat
