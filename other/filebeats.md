@@ -47,6 +47,13 @@ topic: bp_api_nginx_error_log
 output.kafka:
 hosts: ["xxx.xxx.xxx.xxx:9092", "xxx.xxx.xxx.xxx:9092", "xxx.xxx.xxx.xxx:9092"]
 topic: "%{[fields][topic]}"
+
+output.redis:
+hosts: ["xxx.xxx.xxx.xxx:6379"]
+port: 6379
+password: "xxx"
+key: "redis_list_key"
+db: 0
 ```
 
 
