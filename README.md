@@ -82,6 +82,8 @@
 
 [23.&nbsp; os uptime->load](./linux/uptime_load.md)
 
+[24.&nbsp; oom](./linux/oom.md)
+
 #### http-study
 
 [1.&nbsp; If-Modified-Since Last-Modified](./http/modified.md)
