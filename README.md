@@ -209,3 +209,7 @@
 #### share
 
 [1.&nbsp; docker](./share/docker.md)
+
+### algorithm
+
+[1.&nbsp; 二分查找](./algorithm/binary_search.md)
