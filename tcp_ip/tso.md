@@ -1,0 +1,1 @@
+## 网卡特性TSO、UFO、GSO、LRO、GRO
