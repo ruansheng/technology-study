@@ -16,8 +16,11 @@ TSO(TCP Segmentation Offload)，是利用网卡对TCP数据包分片，减轻CPU
 
 ### ethtool
 ```
-在系统中可以通过ethtool命令来进行查看
+查看网卡是否支持TSO
 #ethtool -k eth0
 generic-segmentation-offload: on
 generic-receive-offload: on
+
+关闭TSO
+ethtool -K eth0 tso off
 ```
