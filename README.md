@@ -229,3 +229,15 @@
 [6.&nbsp; 网卡特性TSO、UFO、GSO、LRO、GRO](./tcp_ip/tso.md)
 
 [7.&nbsp; port端口](./tcp_ip/port.md)
+
+[8.&nbsp; 三次握手](./tcp_ip/shake_hand.md)
+
+[9.&nbsp; 丢包重传次数](./tcp_ip/tcp_syn_retries.md)
+
+[10.&nbsp; 同时打开](./tcp_ip/together_open.md)
+
+[11.&nbsp; 四次挥手](./tcp_ip/wave_hand.md)
+
+[12.&nbsp; 同时关闭](./tcp_ip/together_close.md)
+
+[13.&nbsp; MSL](./tcp_ip/msl.md)
