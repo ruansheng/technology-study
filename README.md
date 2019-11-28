@@ -240,4 +240,8 @@
 
 [12.&nbsp; 同时关闭](./tcp_ip/together_close.md)
 
-[13.&nbsp; MSL](./tcp_ip/msl.md)
+[13.&nbsp; 2MSL 和 TIME_WAIT ](./tcp_ip/msl.md)
+
+[14.&nbsp; TTL](./tcp_ip/ttl.md)
+
+[15.&nbsp; RTT](./tcp_ip/rtt.md)
