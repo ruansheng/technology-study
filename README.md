@@ -283,3 +283,5 @@
 [2.&nbsp; Hello World](./rust/hello_world.md)
 
 [3.&nbsp; 添加依赖](./rust/add_dep.md)
+
+[4.&nbsp; rustc](./rust/rustc.md)
