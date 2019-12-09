@@ -23,4 +23,7 @@ cargo publish 可以将库发布到 crates.io。
 
 要检查您是否安装了 Rust 和 Cargo，可以在终端中运行(可能需要配置PATH环境变量)：
 cargo --version
+
+查看rust版本:
+rustc --version
 ```
