@@ -288,6 +288,10 @@
 
 [4.&nbsp; rustc](./rust/rustc.md)
 
+[5.&nbsp; 宏](./rust/hong.md)
+
+[6.&nbsp; Cargo](./rust/cargo.md)
+
 ### 分布式
 
 [1.&nbsp; raft协议](./fbs/raft.md)
