@@ -182,6 +182,8 @@
 
 [6.&nbsp; window.performance.timing](./other/window_performance_timing.md)
 
+[7.&nbsp; SnowFlake算法](./other/snowflake.md)
+
 #### docker
 
 [1.&nbsp; --privileged](./docker/privileged.md)
