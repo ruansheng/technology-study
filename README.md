@@ -98,6 +98,8 @@
 
 [5.&nbsp; Basic Authorization](./http/basic_authorization.md)
 
+[6.&nbsp; Upload File](./http/upload_file.md)
+
 #### nginx-study
 
 [1.&nbsp; --with-http_stub_status_module](./nginx/http_stub_status_module.md)
@@ -291,6 +293,12 @@
 [5.&nbsp; 宏](./rust/hong.md)
 
 [6.&nbsp; Cargo](./rust/cargo.md)
+
+[7.&nbsp; 函数指针](./rust/func_pointer.md)
+
+[8.&nbsp; 原生类型](./rust/types.md)
+
+[9.&nbsp; 循环](./rust/loop.md)
 
 ### 分布式
 
