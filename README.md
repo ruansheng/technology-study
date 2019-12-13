@@ -31,6 +31,8 @@
 
 [1.&nbsp; redis hash](./redis/redis_hash.md)
 
+[2.&nbsp; redis 数据类型](./redis/data_type.md)
+
 #### mongodb-study
 
 
