@@ -88,6 +88,8 @@
 
 [25.&nbsp; Linux用户态与内核态通信的几种方式](./linux/user_space_kernel_space.md)
 
+[26.&nbsp; inode](./linux/inode.md)
+
 #### http-study
 
 [1.&nbsp; If-Modified-Since Last-Modified](./http/modified.md)
