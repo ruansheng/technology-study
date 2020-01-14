@@ -90,6 +90,8 @@
 
 [26.&nbsp; inode](./linux/inode.md)
 
+[27.&nbsp; crontab](./linux/crontab.md)
+
 #### http-study
 
 [1.&nbsp; If-Modified-Since Last-Modified](./http/modified.md)
