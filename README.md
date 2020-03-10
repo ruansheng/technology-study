@@ -27,6 +27,8 @@
 
 [10.&nbsp; tinytext、text、mediumtext、longtext](./mysql/text.md)
 
+[11.&nbsp; 常见的几种log](./mysql/log.md)
+
 #### redis-study
 
 [1.&nbsp; redis hash](./redis/redis_hash.md)
