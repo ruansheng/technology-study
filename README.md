@@ -140,6 +140,8 @@
 
 [15.&nbsp; ngx_log_if](./nginx/ngx_log_if.md)
 
+[16.&nbsp; proxy_pass的几种配置情况](./nginx/proxy_pass.md)
+
 #### zookeeper-study
 
 [1.&nbsp; install single zk](./zookeeper/install_single.md)
