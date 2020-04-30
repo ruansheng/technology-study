@@ -29,6 +29,8 @@
 
 [11.&nbsp; 常见的几种log](./mysql/log.md)
 
+[12.&nbsp; MySQL 的自增主键不单调也不连续](./mysql/auto_increment.md)
+
 #### redis-study
 
 [1.&nbsp; redis hash](./redis/redis_hash.md)
