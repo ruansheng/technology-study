@@ -3,47 +3,36 @@
 location /static{
     proxy_pass  192.168.2.321:81;
     #跳转到
-    http://host:port/static -> http://192.168.2.321:81/static/
-    http://host:port/static/ -> http://192.168.2.321:81/static/
-    http://host:port/static/1.html -> http://192.168.2.321:81/static/1.html
-    http://host:port/static/1.html?a=b -> http://192.168.2.321:81/static/1.html?a=b
-}
-
-location /static{
-    proxy_pass  192.168.2.321:81/m;
-    #跳转到
-    http://host:port/static -> http://192.168.2.321:81/m/
-    http://host:port/static/ -> http://192.168.2.321:81/m/
-    http://host:port/static?a=b -> http://192.168.2.321:81/m/?a=b
-    http://host:port/static/1.html -> http://192.168.2.321:81/static/1.html
-    http://host:port/static/1.html?a=b -> http://192.168.2.321:81/static/1.html?a=b
+    #http://host:port/static -> http://192.168.2.321:81/static/
+    #http://host:port/static/ -> http://192.168.2.321:81/static/
+    #http://host:port/static/1.html -> http://192.168.2.321:81/static/1.html
+    #http://host:port/static/1.html?a=b -> http://192.168.2.321:81/static/1.html?a=b
 }
 
 location /static{
     proxy_pass  192.168.2.321:81/;
     #跳转到
-    http://host:port/static -> http://192.168.2.321:81//
-    http://host:port/static/ -> http://192.168.2.321:81//
-    http://host:port/static/1.html -> http://192.168.2.321:81//1.html
-    http://host:port/static/1.html?a=b -> http://192.168.2.321:81//1.html?a=b
+    #http://host:port/static -> http://192.168.2.321:81//
+    #http://host:port/static/ -> http://192.168.2.321:81//
+    #http://host:port/static/1.html -> http://192.168.2.321:81//1.html
+    #http://host:port/static/1.html?a=b -> http://192.168.2.321:81//1.html?a=b
 }
 
 location /static/{
     proxy_pass  192.168.2.321:81;
     #跳转到
-    http://host:port/static -> http://192.168.2.321:81/static/
-    http://host:port/static/ -> http://192.168.2.321:81/static/
-    http://host:port/static/1.html -> http://192.168.2.321:81/static/1.html
-    http://host:port/static/1.html?a=b -> http://192.168.2.321:81/static/1.html?a=b
+    #http://host:port/static -> http://192.168.2.321:81/static/
+    #http://host:port/static/ -> http://192.168.2.321:81/static/
+    #http://host:port/static/1.html -> http://192.168.2.321:81/static/1.html
+    #http://host:port/static/1.html?a=b -> http://192.168.2.321:81/static/1.html?a=b
 }
 
 location /static/{
     proxy_pass  192.168.2.321:81/;
     #跳转到
-    http://host:port/static -> http://192.168.2.321:81/
-    http://host:port/static/ -> http://192.168.2.321:81/
-    http://host:port/static/1.html -> http://192.168.2.321:81/1.html
-    http://host:port/static/1.html?a=b -> http://192.168.2.321:81/1.html?a=b
-    http://host:port/static/?a=b -> http://192.168.2.321:81/?a=b
+    #http://host:port/static -> http://192.168.2.321:81/
+    #http://host:port/static/ -> http://192.168.2.321:81/
+    #http://host:port/static/1.html -> http://192.168.2.321:81/1.html
+    #http://host:port/static/1.html?a=b -> http://192.168.2.321:81/1.html?a=b
 }
 ```
