@@ -198,6 +198,8 @@
 
 [7.&nbsp; SnowFlake算法](./other/snowflake.md)
 
+[8.&nbsp; OAuth2](./other/oauth2.md)
+
 #### docker
 
 [1.&nbsp; --privileged](./docker/privileged.md)
